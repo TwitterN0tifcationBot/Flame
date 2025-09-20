@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <script>
+        function checkPassword() {
+            var password = prompt("Please enter the password:");
+            var correctPassword = "Jxknjufg*";
+
+            if (password === correctPassword) {
+                window.location.href = "botHud.html";
+            } else {
+                alert("Incorrect password. Access denied.");
+            }
+        }
+
+        // Automatically prompt for password when the page loads
+        window.onload = checkPassword;
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Password Protected Area</h1>
+</body>
+</html>
